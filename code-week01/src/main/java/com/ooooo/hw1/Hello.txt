@@ -1,0 +1,245 @@
+Classfile /Users/ooooo/Code/Self/geektime-java/code-week01/src/main/java/com/ooooo/hw1/Hello.class
+  Last modified 2021年2月19日; size 1296 bytes
+  MD5 checksum ef2a2e422ca2b3332d2acdbdae9ee7a3
+  Compiled from "Hello.java"
+public class com.ooooo.hw1.Hello // 类的基本信息
+  minor version: 0
+  major version: 55
+  flags: (0x0021) ACC_PUBLIC, ACC_SUPER
+  this_class: #12                         // com/ooooo/hw1/Hello
+  super_class: #13                        // java/lang/Object
+  interfaces: 0, fields: 0, methods: 2, attributes: 3 // 包含一个隐式构造函数
+Constant pool: // 常量池
+   #1 = Methodref          #17.#28        // java/lang/Object."<init>":()V
+   #2 = Fieldref           #29.#30        // java/lang/System.out:Ljava/io/PrintStream;
+   #3 = Methodref          #31.#32        // java/io/PrintStream.println:(I)V
+   #4 = Float              5.0f
+   #5 = Float              6.0f
+   #6 = Methodref          #31.#33        // java/io/PrintStream.println:(F)V
+   #7 = Double             7.0d
+   #9 = Double             8.0d
+  #11 = Methodref          #31.#34        // java/io/PrintStream.println:(D)V
+  #12 = String             #35            // a < b
+  #13 = Methodref          #31.#36        // java/io/PrintStream.println:(Ljava/lang/String;)V
+  #14 = String             #37            // a > b
+  #15 = InvokeDynamic      #0:#41         // #0:makeConcatWithConstants:(I)Ljava/lang/String;
+  #16 = Class              #42            // com/ooooo/hw1/Hello
+  #17 = Class              #43            // java/lang/Object
+  #18 = Utf8               <init>
+  #19 = Utf8               ()V
+  #20 = Utf8               Code
+  #21 = Utf8               LineNumberTable
+  #22 = Utf8               main
+  #23 = Utf8               ([Ljava/lang/String;)V
+  #24 = Utf8               StackMapTable
+  #25 = Class              #44            // "[Ljava/lang/String;"
+  #26 = Utf8               SourceFile
+  #27 = Utf8               Hello.java
+  #28 = NameAndType        #18:#19        // "<init>":()V
+  #29 = Class              #45            // java/lang/System
+  #30 = NameAndType        #46:#47        // out:Ljava/io/PrintStream;
+  #31 = Class              #48            // java/io/PrintStream
+  #32 = NameAndType        #49:#50        // println:(I)V
+  #33 = NameAndType        #49:#51        // println:(F)V
+  #34 = NameAndType        #49:#52        // println:(D)V
+  #35 = Utf8               a < b
+  #36 = NameAndType        #49:#53        // println:(Ljava/lang/String;)V
+  #37 = Utf8               a > b
+  #38 = Utf8               BootstrapMethods
+  #39 = MethodHandle       6:#54          // REF_invokeStatic java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+  #40 = String             #55            // sum =\u0001
+  #41 = NameAndType        #56:#57        // makeConcatWithConstants:(I)Ljava/lang/String;
+  #42 = Utf8               com/ooooo/hw1/Hello
+  #43 = Utf8               java/lang/Object
+  #44 = Utf8               [Ljava/lang/String;
+  #45 = Utf8               java/lang/System
+  #46 = Utf8               out
+  #47 = Utf8               Ljava/io/PrintStream;
+  #48 = Utf8               java/io/PrintStream
+  #49 = Utf8               println
+  #50 = Utf8               (I)V
+  #51 = Utf8               (F)V
+  #52 = Utf8               (D)V
+  #53 = Utf8               (Ljava/lang/String;)V
+  #54 = Methodref          #58.#59        // java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+  #55 = Utf8               sum =\u0001
+  #56 = Utf8               makeConcatWithConstants
+  #57 = Utf8               (I)Ljava/lang/String;
+  #58 = Class              #60            // java/lang/invoke/StringConcatFactory
+  #59 = NameAndType        #56:#64        // makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+  #60 = Utf8               java/lang/invoke/StringConcatFactory
+  #61 = Class              #66            // java/lang/invoke/MethodHandles$Lookup
+  #62 = Utf8               Lookup
+  #63 = Utf8               InnerClasses
+  #64 = Utf8               (Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+  #65 = Class              #67            // java/lang/invoke/MethodHandles
+  #66 = Utf8               java/lang/invoke/MethodHandles$Lookup
+  #67 = Utf8               java/lang/invoke/MethodHandles
+{
+  public com.ooooo.hw1.Hello(); // 默认构造参数
+    descriptor: ()V
+    flags: (0x0001) ACC_PUBLIC // public方法
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #1                  // Method java/lang/Object."<init>":()V  invokespecial构造函数初始化
+         4: return
+      LineNumberTable:
+        line 7: 0
+
+  public static void main(java.lang.String[]); // main 方法
+    descriptor: ([Ljava/lang/String;)V  // '[' -> 数组; 'L' -> 类
+    flags: (0x0009) ACC_PUBLIC, ACC_STATIC // public static方法
+    Code:
+      stack=5, locals=11, args_size=1
+         0: iconst_3  // 定义常量为 3 的数
+         1: istore_1  // 把 3 存储在 1 的位置
+         2: iconst_4  // 定义常量为 4 的数
+         3: istore_2  // 把 4 存储为 2 的位置
+         4: getstatic     #2                  // Field java/lang/System.out:Ljava/io/PrintStream;
+         7: iload_1   // 加载 1 位置的数
+         8: iload_2   // 加载 2 位置的数
+         9: iadd      // 计算 3 + 4
+        10: invokevirtual #3  // 调用 println 方法                // Method java/io/PrintStream.println:(I)V
+        13: getstatic     #2                  // Field java/lang/System.out:Ljava/io/PrintStream;
+        16: iload_1   // 加载 1 位置的数
+        17: iload_2   // 加载 2 位置的数
+        18: isub      // 计算 3 - 4
+        19: invokevirtual #3  // 调用 println 方法                // Method java/io/PrintStream.println:(I)V
+        22: getstatic     #2                  // Field java/lang/System.out:Ljava/io/PrintStream;
+        25: iload_1
+        26: iload_2
+        27: imul      // 计算 3 * 4
+        28: invokevirtual #3                  // Method java/io/PrintStream.println:(I)V
+        31: getstatic     #2                  // Field java/lang/System.out:Ljava/io/PrintStream;
+        34: iload_1
+        35: iload_2
+        36: idiv      // 计算 3 / 4
+        37: invokevirtual #3                  // Method java/io/PrintStream.println:(I)V
+        40: getstatic     #2                  // Field java/lang/System.out:Ljava/io/PrintStream;
+        43: iload_1
+        44: iload_2
+        45: irem      // 计算 3 % 4
+        46: invokevirtual #3                  // Method java/io/PrintStream.println:(I)V
+        49: ldc           #4                  // float 5.0f
+        51: fstore_3  // 存储在 3 位置
+        52: ldc           #5                  // float 6.0f
+        54: fstore        4   // 存储在 4 位置
+        56: getstatic     #2                  // Field java/lang/System.out:Ljava/io/PrintStream;
+        59: fload_3
+        60: fload         4
+        62: fadd      // 计算 5.0f + 6.0f
+        63: invokevirtual #6                  // Method java/io/PrintStream.println:(F)V
+        66: getstatic     #2                  // Field java/lang/System.out:Ljava/io/PrintStream;
+        69: fload_3
+        70: fload         4
+        72: fsub
+        73: invokevirtual #6                  // Method java/io/PrintStream.println:(F)V
+        76: getstatic     #2                  // Field java/lang/System.out:Ljava/io/PrintStream;
+        79: fload_3
+        80: fload         4
+        82: fmul
+        83: invokevirtual #6                  // Method java/io/PrintStream.println:(F)V
+        86: getstatic     #2                  // Field java/lang/System.out:Ljava/io/PrintStream;
+        89: fload_3
+        90: fload         4
+        92: fdiv
+        93: invokevirtual #6                  // Method java/io/PrintStream.println:(F)V
+        96: ldc2_w        #7                  // double 7.0d
+        99: dstore        5   // 把 double 类型的数字存储在位置5，占八个字节，所以下一个位置为 7
+       101: ldc2_w        #9                  // double 8.0d
+       104: dstore        7
+       106: getstatic     #2                  // Field java/lang/System.out:Ljava/io/PrintStream;
+       109: dload         5
+       111: dload         7
+       113: dadd
+       114: invokevirtual #11                 // Method java/io/PrintStream.println:(D)V
+       117: getstatic     #2                  // Field java/lang/System.out:Ljava/io/PrintStream;
+       120: dload         5
+       122: dload         7
+       124: dsub
+       125: invokevirtual #11                 // Method java/io/PrintStream.println:(D)V
+       128: getstatic     #2                  // Field java/lang/System.out:Ljava/io/PrintStream;
+       131: dload         5
+       133: dload         7
+       135: dmul
+       136: invokevirtual #11                 // Method java/io/PrintStream.println:(D)V
+       139: getstatic     #2                  // Field java/lang/System.out:Ljava/io/PrintStream;
+       142: dload         5
+       144: dload         7
+       146: ddiv
+       147: invokevirtual #11                 // Method java/io/PrintStream.println:(D)V
+       150: iload_1      // 加载 1 位置的数字 3
+       151: iload_2      // 加载 2 位置的数字 4
+       152: if_icmpge     166 // if 语句，int 类型比较  'ge' -> 大于等于， 跳到代码 166 行
+       155: getstatic     #2                  // Field java/lang/System.out:Ljava/io/PrintStream;
+       158: ldc           #12                 // String a < b
+       160: invokevirtual #13                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+       163: goto          174  // 跳到代码 174 行
+       166: getstatic     #2                  // Field java/lang/System.out:Ljava/io/PrintStream;
+       169: ldc           #14                 // String a > b
+       171: invokevirtual #13                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+       174: iconst_0
+       175: istore        9 // int sum = 0
+       177: iconst_0
+       178: istore        10 // int i = 0
+       180: iload         10 // 加载 i 的值
+       182: bipush        10 // 向栈中push一个数字 10
+       184: if_icmpge     200 // 如果大于等于就跳到代码 200 行
+       187: iload         9
+       189: iload         10
+       191: iadd
+       192: istore        9
+       194: iinc          10, 1 // 执行 i++
+       197: goto          180 // 跳到代码 180 行，继续比较
+       200: getstatic     #2                  // Field java/lang/System.out:Ljava/io/PrintStream;
+       203: iload         9 // 加载 sum 的值
+       205: invokedynamic #15,  0   // 字符串相加          // InvokeDynamic #0:makeConcatWithConstants:(I)Ljava/lang/String;
+       210: invokevirtual #13                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+       213: return
+      LineNumberTable:
+        line 11: 0
+        line 12: 4
+        line 13: 13
+        line 14: 22
+        line 15: 31
+        line 16: 40
+        line 18: 49
+        line 19: 56
+        line 20: 66
+        line 21: 76
+        line 22: 86
+        line 24: 96
+        line 25: 106
+        line 26: 117
+        line 27: 128
+        line 28: 139
+        line 30: 150
+        line 31: 155
+        line 33: 166
+        line 36: 174
+        line 37: 177
+        line 38: 187
+        line 37: 194
+        line 40: 200
+        line 41: 213
+      StackMapTable: number_of_entries = 4
+        frame_type = 255 /* full_frame */
+          offset_delta = 166
+          locals = [ class "[Ljava/lang/String;", int, int, float, float, double, double ]
+          stack = []
+        frame_type = 7 /* same */
+        frame_type = 253 /* append */
+          offset_delta = 5
+          locals = [ int, int ]
+        frame_type = 250 /* chop */
+          offset_delta = 19
+}
+SourceFile: "Hello.java"
+InnerClasses:
+  public static final #62= #61 of #65;    // Lookup=class java/lang/invoke/MethodHandles$Lookup of class java/lang/invoke/MethodHandles
+BootstrapMethods:
+  0: #39 REF_invokeStatic java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #40 sum =\u0001
+
