@@ -1,9 +1,8 @@
-package com.ooooo.hw1;
+package com.ooooo.homework.code1;
 
 /**
  * @author leizhijie
- * @since 2021/2/19 11:08
- * 运行命令 javac Hello.java , javap -c -v Hello
+ * @since 2021/2/19 11:08 运行命令 javac Hello.java , javap -c -v Hello
  */
 public class Hello {
 	

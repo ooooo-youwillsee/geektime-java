@@ -1,4 +1,4 @@
-package com.ooooo.hw2;
+package com.ooooo.homework.code2;
 
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
