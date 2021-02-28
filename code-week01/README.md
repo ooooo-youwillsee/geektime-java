@@ -59,7 +59,19 @@
 
 1.（选做）本机使用 G1 GC 启动一个程序，仿照课上案例分析一下 JVM 情况。
 
-无
+可以使用 gateway-server-0.0.1-SNAPSHOT.jar 
+
+注意关闭自适应参数：-XX:-UseAdaptiveSizePolicy 
+- `java -Xmx1g -Xms1g -XX:-UseAdaptiveSizePolicy -XX:+UseSerialGC -jar gateway-server-0.0.1-SNAPSHOT.jar`
+- `java -Xmx1g -Xms1g -XX:-UseAdaptiveSizePolicy -XX:+UseParallelGC -jar gateway-server-0.0.1-SNAPSHOT.jar`
+- `java -Xmx1g -Xms1g -XX:-UseAdaptiveSizePolicy -XX:+UseConcMarkSweepGC -jar gateway-server-0.0.1-SNAPSHOT.jar`
+- `java -Xmx1g -Xms1g -XX:-UseAdaptiveSizePolicy -XX:+UseG1GC -XX:MaxGCPauseMillis=50 -jar gateway-server-0.0.1-SNAPSHOT.jar` 
+
+使用jmap，jstat，jstack，以及可视化工具，查看jvm情况。 mac上可以用wrk，windows上可以按照superbenchmark压测, http://localhost:8088/api/hello 查看jvm
+
+测试命令 `wrk -c 10000 -d 60 -t 10 http://localhost:8088/api/hello`
+
+平均下来 ParallelGC QPS最高
 
 ## 操作步骤
 
