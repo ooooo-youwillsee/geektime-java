@@ -15,6 +15,7 @@ import lombok.SneakyThrows;
  * @author leizhijie
  * @since 2021/3/5 16:42
  */
+@SuppressWarnings("DuplicatedCode")
 public class XarFile {
 	
 	private static final String MANIFEST_NAME = "META-INF/MANIFEST.MF";
@@ -27,7 +28,7 @@ public class XarFile {
 	private Manifest manifest;
 	
 	public XarFile(File xarFile) throws Exception {
-		xclassNames = new HashSet<>(64);
+		this.xclassNames = new HashSet<>(64);
 		this.jarFile = new JarFile(xarFile);
 		
 		Enumeration<JarEntry> entries = jarFile.entries();
@@ -36,7 +37,6 @@ public class XarFile {
 			String name = jarEntry.getName();
 			System.out.printf("jarEntry: [ name = %s ] %n", name);
 			if (name.endsWith(XLASS_EXTENSION)) {
-				// 去掉.xlass后缀
 				xclassNames.add(name);
 			} else if (name.equals(MANIFEST_NAME)) {
 				this.manifest = new Manifest(jarFile.getInputStream(jarEntry));
@@ -63,7 +63,7 @@ public class XarFile {
 		return xclassNames;
 	}
 	
-	// name -> com.ooooo.test.Hello1
+	// name -> com/ooooo/test/Hello1.xlass
 	@SneakyThrows
 	public byte[] readXclass(String name) {
 		JarEntry jarEntry = jarFile.getJarEntry(name);
