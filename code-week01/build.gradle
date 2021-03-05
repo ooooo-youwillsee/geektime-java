@@ -1,0 +1,14 @@
+plugins {
+}
+
+allprojects {
+	group "com.ooooo"
+
+	repositories {
+		mavenCentral()
+	}
+
+	configurations.all {
+		resolutionStrategy.cacheChangingModulesFor 0, "minutes"
+	}
+}
