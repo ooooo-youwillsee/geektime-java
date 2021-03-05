@@ -26,14 +26,6 @@ allprojects {
 		options.compilerArgs << "-Xlint:-unchecked" << "-Xlint:-deprecation" << '-Xlint:-varargs'
 	}
 
-	configurations.all {
-		resolutionStrategy {
-//            failOnVersionConflict()
-//            cacheChangingModulesFor 60, "seconds"
-//            cacheDynamicVersionsFor 60, "seconds"
-		}
-	}
-
 	ext {
 		set('springCloudVersion', "Hoxton.SR6")
 	}

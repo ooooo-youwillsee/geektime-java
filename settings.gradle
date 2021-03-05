@@ -1,23 +1,25 @@
 pluginManagement {
-	repositories {
-		mavenCentral()
-		gradlePluginPortal()
-		maven {
-			url 'https://repo.spring.io/plugins-release'
-		}
-		if (version.endsWith('-SNAPSHOT')) {
-			maven { url "https://repo.spring.io/snapshot" }
-		}
-	}
+    repositories {
+        mavenCentral()
+        gradlePluginPortal()
+        maven {
+            url 'https://repo.spring.io/plugins-release'
+        }
+        if (version.endsWith('-SNAPSHOT')) {
+            maven { url "https://repo.spring.io/snapshot" }
+        }
+    }
 }
 
 plugins {
 }
 
-rootProject.name="geektime-java"
+rootProject.name = "geektime-java"
 
 
 include "code-week01"
 
 
 include "code-jvm:jvm01"
+include "code-jvm:jvm02"
+
