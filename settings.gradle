@@ -11,15 +11,19 @@ pluginManagement {
     }
 }
 
-plugins {
-}
-
 rootProject.name = "geektime-java"
 
 
 include "code-week01"
 
+include "code-week09:hw01-demo-grpc"
+include "code-week09:hw03:rpcfx-core"
+include "code-week09:hw03:rpcfx-demo-api"
+include "code-week09:hw03:rpcfx-demo-consumer"
+include "code-week09:hw03:rpcfx-demo-provider"
+
 
 include "code-jvm:jvm01"
 include "code-jvm:jvm02"
+
 
