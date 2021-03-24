@@ -1,6 +1,6 @@
 package com.ooooo.rpcfx.demo.provider;
 
-import io.kimmking.rpcfx.api.RpcfxResolver;
+import com.ooooo.rpcfx.api.RpcfxResolver;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.ApplicationContextAware;
 

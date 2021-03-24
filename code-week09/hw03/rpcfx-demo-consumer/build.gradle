@@ -1,7 +1,10 @@
+plugins {
+    id 'org.springframework.boot'
+}
 dependencies {
-    api(":code-week02:hw03:rpcfx-core")
-    api(":code-week02:hw03:rpcfx-demo-api")
+    api(project(":code-week09:hw03:rpcfx-core"))
+    api(project(":code-week09:hw03:rpcfx-demo-api"))
 
-    implementation("org.springframework.boot:spring-boot-starter-web")
-    testImplementation("org.springframework.boot:spring-boot-starter-test")
+    implementation("org.springframework.boot:spring-boot-starter-web:2.0.9.RELEASE")
+    testImplementation("org.springframework.boot:spring-boot-starter-test:2.0.9.RELEASE")
 }

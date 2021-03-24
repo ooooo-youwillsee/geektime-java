@@ -1,7 +1,8 @@
 package com.ooooo.rpcfx.demo.provider;
 
-import io.kimmking.rpcfx.demo.api.User;
-import io.kimmking.rpcfx.demo.api.UserService;
+
+import com.ooooo.rpcfx.demo.api.User;
+import com.ooooo.rpcfx.demo.api.UserService;
 
 public class UserServiceImpl implements UserService {
 

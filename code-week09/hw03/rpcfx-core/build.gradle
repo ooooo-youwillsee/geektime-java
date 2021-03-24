@@ -1,4 +1,9 @@
 dependencies {
-    implementation("org.springframework.boot:spring-boot-starter-web")
-    testImplementation("org.springframework.boot:spring-boot-starter-test")
+    api("com.alibaba:fastjson:1.2.70")
+    api("org.apache.curator:curator-client:5.1.0")
+    api("org.apache.curator:curator-framework:5.1.0")
+    api("org.apache.curator:curator-recipes:5.1.0")
+    api("com.squareup.okhttp3:okhttp:3.12.2")
+    api("com.alibaba:fastjson:1.2.70")
+    testImplementation("org.springframework.boot:spring-boot-starter-test:2.0.9.RELEASE")
 }

@@ -1,7 +1,12 @@
+plugins {
+    id 'org.springframework.boot'
+}
 dependencies {
-    api(":code-week02:hw03:rpcfx-core")
-    api(":code-week02:hw03:rpcfx-demo-api")
-
+    api(project(":code-week09:hw03:rpcfx-core"))
+    api(project(":code-week09:hw03:rpcfx-demo-api"))
+    api("org.apache.curator:curator-client:5.1.0")
+    api("org.apache.curator:curator-framework:5.1.0")
+    api("org.apache.curator:curator-recipes:5.1.0")
     implementation("org.springframework.boot:spring-boot-starter-web")
     testImplementation("org.springframework.boot:spring-boot-starter-test")
 }
